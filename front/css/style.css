@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #dfdfdf;
+    box-shadow: inset 0 0 1rem rgba(0, 0, 0, .5);
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header div{
+    text-shadow: 0 .020rem .04rem rgba(0, 0, 0, .5);
+    font-weight: 700;
+    color: #222;
+    font-size: 36px;
+    /*
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+main .fa-minus {
+    color: #5f5f5f;
+}
+
+main #textAreaContent {
+    resize: both;
+}
+
+main .btn-save {
+    color: white;
+    background-color: #80B636;
+    border-radius: 8px;
+    border: none;
+
+    padding: 12px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    margin: 36px 0;
+    cursor: pointer;
+
+    transition-duration: 0.4s;
+}
+
+main .btn-save:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+main .btn-save .spinner-border {
+    display: none;
+}
+
+main .btn-save .spinner-border.active {
+    display: inline-block;
+}
+
+/*! ALERT */
+.alert {
+    display: none;
+
+    position: absolute;
+    top: 84%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.alert.active {
+    display: block;
+}
+/*// ALERT */
+
+@media screen and (max-width: 600px){
+    header div {
+        font-size: 24px;
+    }
+}
