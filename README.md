@@ -17,10 +17,12 @@
 
 Web interface and API for sharing temporary content with AWS S3 using presigned URL to download and upload objects
 
+<img src="./assets/temp-content-sharer.png" alt="temp-content-sharer">
+
 <img src="./assets/temp-content-sharer.gif" alt="temp-content-sharer">
 
 #### Motivation
-The need to share secrets and confidential files without exposing them forever as in the case of an email and without having to manually delete them, as in the case of a slack message for example
+The need to share secrets and confidential files without exposing them forever or without having to manually delete them, for example email and slack message respectively
 
 So the objective of this project is to share the URL of secrets and files that expire after a certain time, using a secure mechanism (private S3) without having to expose the file or plain text in a place and having to delete it. it manually when possible
 
